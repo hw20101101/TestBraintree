@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4436646A251F458A00BCBED8 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 44366460251F458A00BCBED8 /* SVRadialGradientLayer.m */; };
+		4436646B251F458A00BCBED8 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44366463251F458A00BCBED8 /* SVProgressAnimatedView.m */; };
+		4436646C251F458A00BCBED8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 44366466251F458A00BCBED8 /* SVProgressHUD.m */; };
+		4436646D251F458A00BCBED8 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44366467251F458A00BCBED8 /* SVIndefiniteAnimatedView.m */; };
+		4436646E251F458A00BCBED8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44366468251F458A00BCBED8 /* SVProgressHUD.bundle */; };
+		446CDA06251F3C8800C7D7FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA05251F3C8800C7D7FC /* AppDelegate.m */; };
+		446CDA09251F3C8800C7D7FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA08251F3C8800C7D7FC /* ViewController.m */; };
+		446CDA0C251F3C8800C7D7FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446CDA0A251F3C8800C7D7FC /* Main.storyboard */; };
+		446CDA0E251F3C8A00C7D7FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446CDA0D251F3C8A00C7D7FC /* Assets.xcassets */; };
+		446CDA11251F3C8A00C7D7FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446CDA0F251F3C8A00C7D7FC /* LaunchScreen.storyboard */; };
+		446CDA14251F3C8A00C7D7FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA13251F3C8A00C7D7FC /* main.m */; };
+		446CDAC4251F3CD500C7D7FC /* BTErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA21251F3CD500C7D7FC /* BTErrors.m */; };
+		446CDAC5251F3CD500C7D7FC /* BTAnalyticsMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA22251F3CD500C7D7FC /* BTAnalyticsMetadata.m */; };
+		446CDAC6251F3CD500C7D7FC /* BTClientToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA23251F3CD500C7D7FC /* BTClientToken.m */; };
+		446CDAC7251F3CD500C7D7FC /* BTJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA25251F3CD500C7D7FC /* BTJSON.m */; };
+		446CDAC8251F3CD500C7D7FC /* BTBinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA26251F3CD500C7D7FC /* BTBinData.m */; };
+		446CDAC9251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA27251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.m */; };
+		446CDACA251F3CD500C7D7FC /* BTURLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA29251F3CD500C7D7FC /* BTURLUtils.m */; };
+		446CDACB251F3CD500C7D7FC /* BTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA2A251F3CD500C7D7FC /* BTAPIClient.m */; };
+		446CDACC251F3CD500C7D7FC /* BTAnalyticsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA2B251F3CD500C7D7FC /* BTAnalyticsService.m */; };
+		446CDACD251F3CD500C7D7FC /* BTPaymentMethodNonceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA2C251F3CD500C7D7FC /* BTPaymentMethodNonceParser.m */; };
+		446CDACE251F3CD500C7D7FC /* BTAppSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA2D251F3CD500C7D7FC /* BTAppSwitch.m */; };
+		446CDACF251F3CD500C7D7FC /* BTPaymentMethodNonce.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA2E251F3CD500C7D7FC /* BTPaymentMethodNonce.m */; };
+		446CDAD0251F3CD500C7D7FC /* BTPreferredPaymentMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA30251F3CD500C7D7FC /* BTPreferredPaymentMethods.m */; };
+		446CDAD1251F3CD500C7D7FC /* BTTokenizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA31251F3CD500C7D7FC /* BTTokenizationService.m */; };
+		446CDAD2251F3CD500C7D7FC /* BTHTTPErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA32251F3CD500C7D7FC /* BTHTTPErrors.m */; };
+		446CDAD3251F3CD500C7D7FC /* BTHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA33251F3CD500C7D7FC /* BTHTTP.m */; };
+		446CDAD4251F3CD500C7D7FC /* BTAPIHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA34251F3CD500C7D7FC /* BTAPIHTTP.m */; };
+		446CDAD5251F3CD500C7D7FC /* BTPostalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA35251F3CD500C7D7FC /* BTPostalAddress.m */; };
+		446CDAD6251F3CD500C7D7FC /* BTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA4C251F3CD500C7D7FC /* BTLogger.m */; };
+		446CDAD7251F3CD500C7D7FC /* BTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA4D251F3CD500C7D7FC /* BTKeychain.m */; };
+		446CDAD8251F3CD500C7D7FC /* BTAPIPinnedCertificates.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA4E251F3CD500C7D7FC /* BTAPIPinnedCertificates.m */; };
+		446CDAD9251F3CD500C7D7FC /* BTPayPalIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA4F251F3CD500C7D7FC /* BTPayPalIDToken.m */; };
+		446CDADA251F3CD500C7D7FC /* BTGraphQLHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA51251F3CD500C7D7FC /* BTGraphQLHTTP.m */; };
+		446CDADB251F3CD500C7D7FC /* BTClientMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA52251F3CD500C7D7FC /* BTClientMetadata.m */; };
+		446CDADC251F3CD500C7D7FC /* BTConfiguration+GraphQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA53251F3CD500C7D7FC /* BTConfiguration+GraphQL.m */; };
+		446CDADD251F3CD500C7D7FC /* BTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA58251F3CD500C7D7FC /* BTConfiguration.m */; };
+		446CDADE251F3CD500C7D7FC /* PPDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA5B251F3CD500C7D7FC /* PPDataCollector.m */; };
+		446CDADF251F3CD500C7D7FC /* libPPRiskMagnesOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446CDA63251F3CD500C7D7FC /* libPPRiskMagnesOC.a */; };
+		446CDAE0251F3CD500C7D7FC /* BTPayPalLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA64251F3CD500C7D7FC /* BTPayPalLineItem.m */; };
+		446CDAE1251F3CD500C7D7FC /* BTPayPalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA65251F3CD500C7D7FC /* BTPayPalRequest.m */; };
+		446CDAE2251F3CD500C7D7FC /* BTPayPalCreditFinancingAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA68251F3CD500C7D7FC /* BTPayPalCreditFinancingAmount.m */; };
+		446CDAE3251F3CD500C7D7FC /* BTPayPalAccountNonce.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA69251F3CD500C7D7FC /* BTPayPalAccountNonce.m */; };
+		446CDAE4251F3CD500C7D7FC /* BTPayPalRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA72251F3CD500C7D7FC /* BTPayPalRequestFactory.m */; };
+		446CDAE5251F3CD500C7D7FC /* PPOTSimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA74251F3CD500C7D7FC /* PPOTSimpleKeychain.m */; };
+		446CDAE6251F3CD500C7D7FC /* PPOTJSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA75251F3CD500C7D7FC /* PPOTJSONHelper.m */; };
+		446CDAE7251F3CD500C7D7FC /* PPOTTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA76251F3CD500C7D7FC /* PPOTTime.m */; };
+		446CDAE8251F3CD500C7D7FC /* PPOTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA77251F3CD500C7D7FC /* PPOTDevice.m */; };
+		446CDAE9251F3CD500C7D7FC /* PPOTPinnedCertificates.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA78251F3CD500C7D7FC /* PPOTPinnedCertificates.m */; };
+		446CDAEA251F3CD500C7D7FC /* PPOTString.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA85251F3CD500C7D7FC /* PPOTString.m */; };
+		446CDAEB251F3CD500C7D7FC /* PPOTEncryptionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA86251F3CD500C7D7FC /* PPOTEncryptionHelper.m */; };
+		446CDAEC251F3CD500C7D7FC /* PPOTURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA87251F3CD500C7D7FC /* PPOTURLSession.m */; };
+		446CDAED251F3CD500C7D7FC /* PPOTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA88251F3CD500C7D7FC /* PPOTMacros.m */; };
+		446CDAEE251F3CD500C7D7FC /* BTPayPalDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA89251F3CD500C7D7FC /* BTPayPalDriver.m */; };
+		446CDAEF251F3CD500C7D7FC /* BTPayPalCreditFinancing.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA8A251F3CD500C7D7FC /* BTPayPalCreditFinancing.m */; };
+		446CDAF0251F3CD500C7D7FC /* otc-config.ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 446CDA8F251F3CD500C7D7FC /* otc-config.ios.json */; };
+		446CDAF1251F3CD500C7D7FC /* PPOTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA90251F3CD500C7D7FC /* PPOTConfiguration.m */; };
+		446CDAF2251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA92251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.m */; };
+		446CDAF3251F3CD500C7D7FC /* PPOTBillingAgreementRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA93251F3CD500C7D7FC /* PPOTBillingAgreementRequest.m */; };
+		446CDAF4251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA96251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.m */; };
+		446CDAF5251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA97251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.m */; };
+		446CDAF6251F3CD500C7D7FC /* PPOTRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA98251F3CD500C7D7FC /* PPOTRequestFactory.m */; };
+		446CDAF7251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA99251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.m */; };
+		446CDAF8251F3CD500C7D7FC /* PPOTCheckoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA9A251F3CD500C7D7FC /* PPOTCheckoutRequest.m */; };
+		446CDAF9251F3CD500C7D7FC /* PPOTAppSwitchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA9C251F3CD500C7D7FC /* PPOTAppSwitchUtil.m */; };
+		446CDAFA251F3CD500C7D7FC /* PPOTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA9D251F3CD500C7D7FC /* PPOTRequest.m */; };
+		446CDAFB251F3CD500C7D7FC /* PPOTResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDA9E251F3CD500C7D7FC /* PPOTResult.m */; };
+		446CDAFC251F3CD500C7D7FC /* PPOTAppSwitchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA0251F3CD500C7D7FC /* PPOTAppSwitchResponse.m */; };
+		446CDAFD251F3CD500C7D7FC /* PPOTSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA1251F3CD500C7D7FC /* PPOTSwitchRequest.m */; };
+		446CDAFE251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA3251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.m */; };
+		446CDAFF251F3CD500C7D7FC /* PPOTPersistentRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA4251F3CD500C7D7FC /* PPOTPersistentRequestData.m */; };
+		446CDB00251F3CD500C7D7FC /* PPOTCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA5251F3CD500C7D7FC /* PPOTCore.m */; };
+		446CDB01251F3CD500C7D7FC /* PPOTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAA9251F3CD500C7D7FC /* PPOTError.m */; };
+		446CDB02251F3CD500C7D7FC /* PPOTAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAAA251F3CD500C7D7FC /* PPOTAuthorizationRequest.m */; };
+		446CDB03251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAB2251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.m */; };
+		446CDB04251F3CD500C7D7FC /* PPFPTITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDABB251F3CD500C7D7FC /* PPFPTITracker.m */; };
+		446CDB05251F3CD500C7D7FC /* PPFPTIData.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDABC251F3CD500C7D7FC /* PPFPTIData.m */; };
+		446CDB06251F3CD500C7D7FC /* PPOTAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDABE251F3CD500C7D7FC /* PPOTAnalyticsTracker.m */; };
+		446CDB07251F3CD500C7D7FC /* BTConfiguration+PayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CDAC3251F3CD500C7D7FC /* BTConfiguration+PayPal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44366460251F458A00BCBED8 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		44366461251F458A00BCBED8 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		44366462251F458A00BCBED8 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		44366463251F458A00BCBED8 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		44366464251F458A00BCBED8 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		44366465251F458A00BCBED8 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		44366466251F458A00BCBED8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		44366467251F458A00BCBED8 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		44366468251F458A00BCBED8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		44366469251F458A00BCBED8 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		446CDA01251F3C8800C7D7FC /* TestBraintree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBraintree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446CDA04251F3C8800C7D7FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		446CDA05251F3C8800C7D7FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		446CDA07251F3C8800C7D7FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		446CDA08251F3C8800C7D7FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		446CDA0B251F3C8800C7D7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446CDA0D251F3C8A00C7D7FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446CDA10251F3C8A00C7D7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446CDA12251F3C8A00C7D7FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446CDA13251F3C8A00C7D7FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		446CDA1C251F3CD500C7D7FC /* BTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTKeychain.h; sourceTree = "<group>"; };
+		446CDA1D251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPreferredPaymentMethodsResult_Internal.h; sourceTree = "<group>"; };
+		446CDA1E251F3CD500C7D7FC /* BTAPIHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAPIHTTP.h; sourceTree = "<group>"; };
+		446CDA1F251F3CD500C7D7FC /* BTHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHTTP.h; sourceTree = "<group>"; };
+		446CDA20251F3CD500C7D7FC /* BTLogger_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLogger_Internal.h; sourceTree = "<group>"; };
+		446CDA21251F3CD500C7D7FC /* BTErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTErrors.m; sourceTree = "<group>"; };
+		446CDA22251F3CD500C7D7FC /* BTAnalyticsMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAnalyticsMetadata.m; sourceTree = "<group>"; };
+		446CDA23251F3CD500C7D7FC /* BTClientToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTClientToken.m; sourceTree = "<group>"; };
+		446CDA24251F3CD500C7D7FC /* BTAPIPinnedCertificates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAPIPinnedCertificates.h; sourceTree = "<group>"; };
+		446CDA25251F3CD500C7D7FC /* BTJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTJSON.m; sourceTree = "<group>"; };
+		446CDA26251F3CD500C7D7FC /* BTBinData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBinData.m; sourceTree = "<group>"; };
+		446CDA27251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPreferredPaymentMethodsResult.m; sourceTree = "<group>"; };
+		446CDA28251F3CD500C7D7FC /* BTGraphQLHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGraphQLHTTP.h; sourceTree = "<group>"; };
+		446CDA29251F3CD500C7D7FC /* BTURLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTURLUtils.m; sourceTree = "<group>"; };
+		446CDA2A251F3CD500C7D7FC /* BTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAPIClient.m; sourceTree = "<group>"; };
+		446CDA2B251F3CD500C7D7FC /* BTAnalyticsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAnalyticsService.m; sourceTree = "<group>"; };
+		446CDA2C251F3CD500C7D7FC /* BTPaymentMethodNonceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPaymentMethodNonceParser.m; sourceTree = "<group>"; };
+		446CDA2D251F3CD500C7D7FC /* BTAppSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAppSwitch.m; sourceTree = "<group>"; };
+		446CDA2E251F3CD500C7D7FC /* BTPaymentMethodNonce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPaymentMethodNonce.m; sourceTree = "<group>"; };
+		446CDA2F251F3CD500C7D7FC /* BTConfiguration+GraphQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTConfiguration+GraphQL.h"; sourceTree = "<group>"; };
+		446CDA30251F3CD500C7D7FC /* BTPreferredPaymentMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPreferredPaymentMethods.m; sourceTree = "<group>"; };
+		446CDA31251F3CD500C7D7FC /* BTTokenizationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTokenizationService.m; sourceTree = "<group>"; };
+		446CDA32251F3CD500C7D7FC /* BTHTTPErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHTTPErrors.m; sourceTree = "<group>"; };
+		446CDA33251F3CD500C7D7FC /* BTHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHTTP.m; sourceTree = "<group>"; };
+		446CDA34251F3CD500C7D7FC /* BTAPIHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAPIHTTP.m; sourceTree = "<group>"; };
+		446CDA35251F3CD500C7D7FC /* BTPostalAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPostalAddress.m; sourceTree = "<group>"; };
+		446CDA37251F3CD500C7D7FC /* BTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLogger.h; sourceTree = "<group>"; };
+		446CDA38251F3CD500C7D7FC /* BTPostalAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPostalAddress.h; sourceTree = "<group>"; };
+		446CDA39251F3CD500C7D7FC /* BTPayPalIDToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalIDToken.h; sourceTree = "<group>"; };
+		446CDA3A251F3CD500C7D7FC /* BraintreeCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BraintreeCore.h; sourceTree = "<group>"; };
+		446CDA3B251F3CD500C7D7FC /* BTClientMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTClientMetadata.h; sourceTree = "<group>"; };
+		446CDA3C251F3CD500C7D7FC /* BTConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConfiguration.h; sourceTree = "<group>"; };
+		446CDA3D251F3CD500C7D7FC /* BTEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTEnums.h; sourceTree = "<group>"; };
+		446CDA3E251F3CD500C7D7FC /* BTViewControllerPresentingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTViewControllerPresentingDelegate.h; sourceTree = "<group>"; };
+		446CDA3F251F3CD500C7D7FC /* BTJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTJSON.h; sourceTree = "<group>"; };
+		446CDA40251F3CD500C7D7FC /* BTClientToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTClientToken.h; sourceTree = "<group>"; };
+		446CDA41251F3CD500C7D7FC /* BTErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTErrors.h; sourceTree = "<group>"; };
+		446CDA42251F3CD500C7D7FC /* BTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAPIClient.h; sourceTree = "<group>"; };
+		446CDA43251F3CD500C7D7FC /* BTURLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLUtils.h; sourceTree = "<group>"; };
+		446CDA44251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPreferredPaymentMethodsResult.h; sourceTree = "<group>"; };
+		446CDA45251F3CD500C7D7FC /* BTBinData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBinData.h; sourceTree = "<group>"; };
+		446CDA46251F3CD500C7D7FC /* BTHTTPErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHTTPErrors.h; sourceTree = "<group>"; };
+		446CDA47251F3CD500C7D7FC /* BTTokenizationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTokenizationService.h; sourceTree = "<group>"; };
+		446CDA48251F3CD500C7D7FC /* BTPreferredPaymentMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPreferredPaymentMethods.h; sourceTree = "<group>"; };
+		446CDA49251F3CD500C7D7FC /* BTPaymentMethodNonce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPaymentMethodNonce.h; sourceTree = "<group>"; };
+		446CDA4A251F3CD500C7D7FC /* BTAppSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAppSwitch.h; sourceTree = "<group>"; };
+		446CDA4B251F3CD500C7D7FC /* BTPaymentMethodNonceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPaymentMethodNonceParser.h; sourceTree = "<group>"; };
+		446CDA4C251F3CD500C7D7FC /* BTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLogger.m; sourceTree = "<group>"; };
+		446CDA4D251F3CD500C7D7FC /* BTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTKeychain.m; sourceTree = "<group>"; };
+		446CDA4E251F3CD500C7D7FC /* BTAPIPinnedCertificates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAPIPinnedCertificates.m; sourceTree = "<group>"; };
+		446CDA4F251F3CD500C7D7FC /* BTPayPalIDToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalIDToken.m; sourceTree = "<group>"; };
+		446CDA50251F3CD500C7D7FC /* BTAnalyticsMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAnalyticsMetadata.h; sourceTree = "<group>"; };
+		446CDA51251F3CD500C7D7FC /* BTGraphQLHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGraphQLHTTP.m; sourceTree = "<group>"; };
+		446CDA52251F3CD500C7D7FC /* BTClientMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTClientMetadata.m; sourceTree = "<group>"; };
+		446CDA53251F3CD500C7D7FC /* BTConfiguration+GraphQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTConfiguration+GraphQL.m"; sourceTree = "<group>"; };
+		446CDA54251F3CD500C7D7FC /* BTPreferredPaymentMethods_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPreferredPaymentMethods_Internal.h; sourceTree = "<group>"; };
+		446CDA55251F3CD500C7D7FC /* BTAnalyticsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAnalyticsService.h; sourceTree = "<group>"; };
+		446CDA56251F3CD500C7D7FC /* Braintree-Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Braintree-Version.h"; sourceTree = "<group>"; };
+		446CDA57251F3CD500C7D7FC /* BTAPIClient_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAPIClient_Internal.h; sourceTree = "<group>"; };
+		446CDA58251F3CD500C7D7FC /* BTConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTConfiguration.m; sourceTree = "<group>"; };
+		446CDA5B251F3CD500C7D7FC /* PPDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDataCollector.m; sourceTree = "<group>"; };
+		446CDA5C251F3CD500C7D7FC /* PPDataCollector_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDataCollector_Internal.h; sourceTree = "<group>"; };
+		446CDA5E251F3CD500C7D7FC /* PayPalDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalDataCollector.h; sourceTree = "<group>"; };
+		446CDA5F251F3CD500C7D7FC /* PPDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDataCollector.h; sourceTree = "<group>"; };
+		446CDA61251F3CD500C7D7FC /* PPRMOCMagnesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRMOCMagnesResult.h; sourceTree = "<group>"; };
+		446CDA62251F3CD500C7D7FC /* PPRMOCMagnesSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRMOCMagnesSDK.h; sourceTree = "<group>"; };
+		446CDA63251F3CD500C7D7FC /* libPPRiskMagnesOC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPRiskMagnesOC.a; sourceTree = "<group>"; };
+		446CDA64251F3CD500C7D7FC /* BTPayPalLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalLineItem.m; sourceTree = "<group>"; };
+		446CDA65251F3CD500C7D7FC /* BTPayPalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalRequest.m; sourceTree = "<group>"; };
+		446CDA66251F3CD500C7D7FC /* BTPayPalRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalRequestFactory.h; sourceTree = "<group>"; };
+		446CDA67251F3CD500C7D7FC /* BTPayPalAccountNonce_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalAccountNonce_Internal.h; sourceTree = "<group>"; };
+		446CDA68251F3CD500C7D7FC /* BTPayPalCreditFinancingAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalCreditFinancingAmount.m; sourceTree = "<group>"; };
+		446CDA69251F3CD500C7D7FC /* BTPayPalAccountNonce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalAccountNonce.m; sourceTree = "<group>"; };
+		446CDA6B251F3CD500C7D7FC /* BTPayPalAccountNonce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalAccountNonce.h; sourceTree = "<group>"; };
+		446CDA6C251F3CD500C7D7FC /* BTConfiguration+PayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTConfiguration+PayPal.h"; sourceTree = "<group>"; };
+		446CDA6D251F3CD500C7D7FC /* BTPayPalCreditFinancing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalCreditFinancing.h; sourceTree = "<group>"; };
+		446CDA6E251F3CD500C7D7FC /* BTPayPalDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalDriver.h; sourceTree = "<group>"; };
+		446CDA6F251F3CD500C7D7FC /* BTPayPalRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalRequest.h; sourceTree = "<group>"; };
+		446CDA70251F3CD500C7D7FC /* BraintreePayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BraintreePayPal.h; sourceTree = "<group>"; };
+		446CDA71251F3CD500C7D7FC /* BTPayPalLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalLineItem.h; sourceTree = "<group>"; };
+		446CDA72251F3CD500C7D7FC /* BTPayPalRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalRequestFactory.m; sourceTree = "<group>"; };
+		446CDA74251F3CD500C7D7FC /* PPOTSimpleKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTSimpleKeychain.m; sourceTree = "<group>"; };
+		446CDA75251F3CD500C7D7FC /* PPOTJSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTJSONHelper.m; sourceTree = "<group>"; };
+		446CDA76251F3CD500C7D7FC /* PPOTTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTTime.m; sourceTree = "<group>"; };
+		446CDA77251F3CD500C7D7FC /* PPOTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTDevice.m; sourceTree = "<group>"; };
+		446CDA78251F3CD500C7D7FC /* PPOTPinnedCertificates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTPinnedCertificates.m; sourceTree = "<group>"; };
+		446CDA7A251F3CD500C7D7FC /* PPOTPinnedCertificates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTPinnedCertificates.h; sourceTree = "<group>"; };
+		446CDA7B251F3CD500C7D7FC /* PPOTEncryptionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTEncryptionHelper.h; sourceTree = "<group>"; };
+		446CDA7C251F3CD500C7D7FC /* PPOTVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTVersion.h; sourceTree = "<group>"; };
+		446CDA7D251F3CD500C7D7FC /* PPOTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTString.h; sourceTree = "<group>"; };
+		446CDA7E251F3CD500C7D7FC /* PPOTURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTURLSession.h; sourceTree = "<group>"; };
+		446CDA7F251F3CD500C7D7FC /* PPOTMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTMacros.h; sourceTree = "<group>"; };
+		446CDA80251F3CD500C7D7FC /* PPOTSimpleKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTSimpleKeychain.h; sourceTree = "<group>"; };
+		446CDA81251F3CD500C7D7FC /* PPOTJSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTJSONHelper.h; sourceTree = "<group>"; };
+		446CDA82251F3CD500C7D7FC /* PPOTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTDevice.h; sourceTree = "<group>"; };
+		446CDA83251F3CD500C7D7FC /* PayPalUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalUtils.h; sourceTree = "<group>"; };
+		446CDA84251F3CD500C7D7FC /* PPOTTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTTime.h; sourceTree = "<group>"; };
+		446CDA85251F3CD500C7D7FC /* PPOTString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTString.m; sourceTree = "<group>"; };
+		446CDA86251F3CD500C7D7FC /* PPOTEncryptionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTEncryptionHelper.m; sourceTree = "<group>"; };
+		446CDA87251F3CD500C7D7FC /* PPOTURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTURLSession.m; sourceTree = "<group>"; };
+		446CDA88251F3CD500C7D7FC /* PPOTMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTMacros.m; sourceTree = "<group>"; };
+		446CDA89251F3CD500C7D7FC /* BTPayPalDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalDriver.m; sourceTree = "<group>"; };
+		446CDA8A251F3CD500C7D7FC /* BTPayPalCreditFinancing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPayPalCreditFinancing.m; sourceTree = "<group>"; };
+		446CDA8D251F3CD500C7D7FC /* PPOTConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTConfiguration.h; sourceTree = "<group>"; };
+		446CDA8E251F3CD500C7D7FC /* PPDefaultConfigurationJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDefaultConfigurationJSON.h; sourceTree = "<group>"; };
+		446CDA8F251F3CD500C7D7FC /* otc-config.ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "otc-config.ios.json"; sourceTree = "<group>"; };
+		446CDA90251F3CD500C7D7FC /* PPOTConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTConfiguration.m; sourceTree = "<group>"; };
+		446CDA92251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTOAuth2AppSwitchRequest.m; sourceTree = "<group>"; };
+		446CDA93251F3CD500C7D7FC /* PPOTBillingAgreementRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTBillingAgreementRequest.m; sourceTree = "<group>"; };
+		446CDA94251F3CD500C7D7FC /* PPOTCore_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCore_Internal.h; sourceTree = "<group>"; };
+		446CDA95251F3CD500C7D7FC /* PPOTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTError.h; sourceTree = "<group>"; };
+		446CDA96251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTOAuth2BrowserSwitchRequest.m; sourceTree = "<group>"; };
+		446CDA97251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTCheckoutAppSwitchRequest.m; sourceTree = "<group>"; };
+		446CDA98251F3CD500C7D7FC /* PPOTRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTRequestFactory.m; sourceTree = "<group>"; };
+		446CDA99251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTOAuth2SwitchRequest.m; sourceTree = "<group>"; };
+		446CDA9A251F3CD500C7D7FC /* PPOTCheckoutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTCheckoutRequest.m; sourceTree = "<group>"; };
+		446CDA9B251F3CD500C7D7FC /* PPOTRequest_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTRequest_Internal.h; sourceTree = "<group>"; };
+		446CDA9C251F3CD500C7D7FC /* PPOTAppSwitchUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTAppSwitchUtil.m; sourceTree = "<group>"; };
+		446CDA9D251F3CD500C7D7FC /* PPOTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTRequest.m; sourceTree = "<group>"; };
+		446CDA9E251F3CD500C7D7FC /* PPOTResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTResult.m; sourceTree = "<group>"; };
+		446CDA9F251F3CD500C7D7FC /* PPOTCheckoutRequest_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCheckoutRequest_Internal.h; sourceTree = "<group>"; };
+		446CDAA0251F3CD500C7D7FC /* PPOTAppSwitchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTAppSwitchResponse.m; sourceTree = "<group>"; };
+		446CDAA1251F3CD500C7D7FC /* PPOTSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTSwitchRequest.m; sourceTree = "<group>"; };
+		446CDAA2251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCheckoutBrowserSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAA3251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTCheckoutSwitchRequest.m; sourceTree = "<group>"; };
+		446CDAA4251F3CD500C7D7FC /* PPOTPersistentRequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTPersistentRequestData.m; sourceTree = "<group>"; };
+		446CDAA5251F3CD500C7D7FC /* PPOTCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTCore.m; sourceTree = "<group>"; };
+		446CDAA6251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTOAuth2SwitchRequest.h; sourceTree = "<group>"; };
+		446CDAA7251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCheckoutAppSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAA8251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTOAuth2BrowserSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAA9251F3CD500C7D7FC /* PPOTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTError.m; sourceTree = "<group>"; };
+		446CDAAA251F3CD500C7D7FC /* PPOTAuthorizationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTAuthorizationRequest.m; sourceTree = "<group>"; };
+		446CDAAB251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTOAuth2AppSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAAC251F3CD500C7D7FC /* PPOTAppSwitchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTAppSwitchResponse.h; sourceTree = "<group>"; };
+		446CDAAD251F3CD500C7D7FC /* PPOTResult_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTResult_Internal.h; sourceTree = "<group>"; };
+		446CDAAE251F3CD500C7D7FC /* PPOTAuthorizationRequest_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTAuthorizationRequest_Internal.h; sourceTree = "<group>"; };
+		446CDAAF251F3CD500C7D7FC /* PPOTAppSwitchUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTAppSwitchUtil.h; sourceTree = "<group>"; };
+		446CDAB0251F3CD500C7D7FC /* PPOTPersistentRequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTPersistentRequestData.h; sourceTree = "<group>"; };
+		446CDAB1251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCheckoutSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAB2251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTCheckoutBrowserSwitchRequest.m; sourceTree = "<group>"; };
+		446CDAB3251F3CD500C7D7FC /* PPOTSwitchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTSwitchRequest.h; sourceTree = "<group>"; };
+		446CDAB5251F3CD500C7D7FC /* PPOTRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTRequestFactory.h; sourceTree = "<group>"; };
+		446CDAB6251F3CD500C7D7FC /* PPOTResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTResult.h; sourceTree = "<group>"; };
+		446CDAB7251F3CD500C7D7FC /* PPOTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTRequest.h; sourceTree = "<group>"; };
+		446CDAB8251F3CD500C7D7FC /* PayPalOneTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOneTouch.h; sourceTree = "<group>"; };
+		446CDAB9251F3CD500C7D7FC /* PPOTCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTCore.h; sourceTree = "<group>"; };
+		446CDABB251F3CD500C7D7FC /* PPFPTITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFPTITracker.m; sourceTree = "<group>"; };
+		446CDABC251F3CD500C7D7FC /* PPFPTIData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFPTIData.m; sourceTree = "<group>"; };
+		446CDABD251F3CD500C7D7FC /* PPOTAnalyticsDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTAnalyticsDefines.h; sourceTree = "<group>"; };
+		446CDABE251F3CD500C7D7FC /* PPOTAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOTAnalyticsTracker.m; sourceTree = "<group>"; };
+		446CDABF251F3CD500C7D7FC /* PPFPTITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFPTITracker.h; sourceTree = "<group>"; };
+		446CDAC0251F3CD500C7D7FC /* PPOTAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOTAnalyticsTracker.h; sourceTree = "<group>"; };
+		446CDAC1251F3CD500C7D7FC /* PPFPTIData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFPTIData.h; sourceTree = "<group>"; };
+		446CDAC2251F3CD500C7D7FC /* BTPayPalDriver_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPayPalDriver_Internal.h; sourceTree = "<group>"; };
+		446CDAC3251F3CD500C7D7FC /* BTConfiguration+PayPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTConfiguration+PayPal.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446CD9FE251F3C8800C7D7FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446CDADF251F3CD500C7D7FC /* libPPRiskMagnesOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4436645F251F458A00BCBED8 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				44366460251F458A00BCBED8 /* SVRadialGradientLayer.m */,
+				44366461251F458A00BCBED8 /* SVIndefiniteAnimatedView.h */,
+				44366462251F458A00BCBED8 /* SVProgressHUD.h */,
+				44366463251F458A00BCBED8 /* SVProgressAnimatedView.m */,
+				44366464251F458A00BCBED8 /* SVProgressHUD-Prefix.pch */,
+				44366465251F458A00BCBED8 /* SVRadialGradientLayer.h */,
+				44366466251F458A00BCBED8 /* SVProgressHUD.m */,
+				44366467251F458A00BCBED8 /* SVIndefiniteAnimatedView.m */,
+				44366468251F458A00BCBED8 /* SVProgressHUD.bundle */,
+				44366469251F458A00BCBED8 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		446CD9F8251F3C8800C7D7FC = {
+			isa = PBXGroup;
+			children = (
+				446CDA03251F3C8800C7D7FC /* TestBraintree */,
+				446CDA02251F3C8800C7D7FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446CDA02251F3C8800C7D7FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA01251F3C8800C7D7FC /* TestBraintree.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446CDA03251F3C8800C7D7FC /* TestBraintree */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA04251F3C8800C7D7FC /* AppDelegate.h */,
+				446CDA05251F3C8800C7D7FC /* AppDelegate.m */,
+				446CDA07251F3C8800C7D7FC /* ViewController.h */,
+				446CDA08251F3C8800C7D7FC /* ViewController.m */,
+				4436645F251F458A00BCBED8 /* SVProgressHUD */,
+				446CDA1A251F3CD500C7D7FC /* BraintreeSDK */,
+				446CDA0A251F3C8800C7D7FC /* Main.storyboard */,
+				446CDA0D251F3C8A00C7D7FC /* Assets.xcassets */,
+				446CDA0F251F3C8A00C7D7FC /* LaunchScreen.storyboard */,
+				446CDA12251F3C8A00C7D7FC /* Info.plist */,
+				446CDA13251F3C8A00C7D7FC /* main.m */,
+			);
+			path = TestBraintree;
+			sourceTree = "<group>";
+		};
+		446CDA1A251F3CD500C7D7FC /* BraintreeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA1B251F3CD500C7D7FC /* BraintreeCore */,
+				446CDA59251F3CD500C7D7FC /* BraintreePayPal */,
+			);
+			path = BraintreeSDK;
+			sourceTree = "<group>";
+		};
+		446CDA1B251F3CD500C7D7FC /* BraintreeCore */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA1C251F3CD500C7D7FC /* BTKeychain.h */,
+				446CDA1D251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult_Internal.h */,
+				446CDA1E251F3CD500C7D7FC /* BTAPIHTTP.h */,
+				446CDA1F251F3CD500C7D7FC /* BTHTTP.h */,
+				446CDA20251F3CD500C7D7FC /* BTLogger_Internal.h */,
+				446CDA21251F3CD500C7D7FC /* BTErrors.m */,
+				446CDA22251F3CD500C7D7FC /* BTAnalyticsMetadata.m */,
+				446CDA23251F3CD500C7D7FC /* BTClientToken.m */,
+				446CDA24251F3CD500C7D7FC /* BTAPIPinnedCertificates.h */,
+				446CDA25251F3CD500C7D7FC /* BTJSON.m */,
+				446CDA26251F3CD500C7D7FC /* BTBinData.m */,
+				446CDA27251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.m */,
+				446CDA28251F3CD500C7D7FC /* BTGraphQLHTTP.h */,
+				446CDA29251F3CD500C7D7FC /* BTURLUtils.m */,
+				446CDA2A251F3CD500C7D7FC /* BTAPIClient.m */,
+				446CDA2B251F3CD500C7D7FC /* BTAnalyticsService.m */,
+				446CDA2C251F3CD500C7D7FC /* BTPaymentMethodNonceParser.m */,
+				446CDA2D251F3CD500C7D7FC /* BTAppSwitch.m */,
+				446CDA2E251F3CD500C7D7FC /* BTPaymentMethodNonce.m */,
+				446CDA2F251F3CD500C7D7FC /* BTConfiguration+GraphQL.h */,
+				446CDA30251F3CD500C7D7FC /* BTPreferredPaymentMethods.m */,
+				446CDA31251F3CD500C7D7FC /* BTTokenizationService.m */,
+				446CDA32251F3CD500C7D7FC /* BTHTTPErrors.m */,
+				446CDA33251F3CD500C7D7FC /* BTHTTP.m */,
+				446CDA34251F3CD500C7D7FC /* BTAPIHTTP.m */,
+				446CDA35251F3CD500C7D7FC /* BTPostalAddress.m */,
+				446CDA36251F3CD500C7D7FC /* Public */,
+				446CDA4C251F3CD500C7D7FC /* BTLogger.m */,
+				446CDA4D251F3CD500C7D7FC /* BTKeychain.m */,
+				446CDA4E251F3CD500C7D7FC /* BTAPIPinnedCertificates.m */,
+				446CDA4F251F3CD500C7D7FC /* BTPayPalIDToken.m */,
+				446CDA50251F3CD500C7D7FC /* BTAnalyticsMetadata.h */,
+				446CDA51251F3CD500C7D7FC /* BTGraphQLHTTP.m */,
+				446CDA52251F3CD500C7D7FC /* BTClientMetadata.m */,
+				446CDA53251F3CD500C7D7FC /* BTConfiguration+GraphQL.m */,
+				446CDA54251F3CD500C7D7FC /* BTPreferredPaymentMethods_Internal.h */,
+				446CDA55251F3CD500C7D7FC /* BTAnalyticsService.h */,
+				446CDA56251F3CD500C7D7FC /* Braintree-Version.h */,
+				446CDA57251F3CD500C7D7FC /* BTAPIClient_Internal.h */,
+				446CDA58251F3CD500C7D7FC /* BTConfiguration.m */,
+			);
+			path = BraintreeCore;
+			sourceTree = "<group>";
+		};
+		446CDA36251F3CD500C7D7FC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA37251F3CD500C7D7FC /* BTLogger.h */,
+				446CDA38251F3CD500C7D7FC /* BTPostalAddress.h */,
+				446CDA39251F3CD500C7D7FC /* BTPayPalIDToken.h */,
+				446CDA3A251F3CD500C7D7FC /* BraintreeCore.h */,
+				446CDA3B251F3CD500C7D7FC /* BTClientMetadata.h */,
+				446CDA3C251F3CD500C7D7FC /* BTConfiguration.h */,
+				446CDA3D251F3CD500C7D7FC /* BTEnums.h */,
+				446CDA3E251F3CD500C7D7FC /* BTViewControllerPresentingDelegate.h */,
+				446CDA3F251F3CD500C7D7FC /* BTJSON.h */,
+				446CDA40251F3CD500C7D7FC /* BTClientToken.h */,
+				446CDA41251F3CD500C7D7FC /* BTErrors.h */,
+				446CDA42251F3CD500C7D7FC /* BTAPIClient.h */,
+				446CDA43251F3CD500C7D7FC /* BTURLUtils.h */,
+				446CDA44251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.h */,
+				446CDA45251F3CD500C7D7FC /* BTBinData.h */,
+				446CDA46251F3CD500C7D7FC /* BTHTTPErrors.h */,
+				446CDA47251F3CD500C7D7FC /* BTTokenizationService.h */,
+				446CDA48251F3CD500C7D7FC /* BTPreferredPaymentMethods.h */,
+				446CDA49251F3CD500C7D7FC /* BTPaymentMethodNonce.h */,
+				446CDA4A251F3CD500C7D7FC /* BTAppSwitch.h */,
+				446CDA4B251F3CD500C7D7FC /* BTPaymentMethodNonceParser.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		446CDA59251F3CD500C7D7FC /* BraintreePayPal */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA5A251F3CD500C7D7FC /* PayPalDataCollector */,
+				446CDA64251F3CD500C7D7FC /* BTPayPalLineItem.m */,
+				446CDA65251F3CD500C7D7FC /* BTPayPalRequest.m */,
+				446CDA66251F3CD500C7D7FC /* BTPayPalRequestFactory.h */,
+				446CDA67251F3CD500C7D7FC /* BTPayPalAccountNonce_Internal.h */,
+				446CDA68251F3CD500C7D7FC /* BTPayPalCreditFinancingAmount.m */,
+				446CDA69251F3CD500C7D7FC /* BTPayPalAccountNonce.m */,
+				446CDA6A251F3CD500C7D7FC /* Public */,
+				446CDA72251F3CD500C7D7FC /* BTPayPalRequestFactory.m */,
+				446CDA73251F3CD500C7D7FC /* PayPalUtils */,
+				446CDA89251F3CD500C7D7FC /* BTPayPalDriver.m */,
+				446CDA8A251F3CD500C7D7FC /* BTPayPalCreditFinancing.m */,
+				446CDA8B251F3CD500C7D7FC /* PayPalOneTouch */,
+				446CDAC2251F3CD500C7D7FC /* BTPayPalDriver_Internal.h */,
+				446CDAC3251F3CD500C7D7FC /* BTConfiguration+PayPal.m */,
+			);
+			path = BraintreePayPal;
+			sourceTree = "<group>";
+		};
+		446CDA5A251F3CD500C7D7FC /* PayPalDataCollector */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA5B251F3CD500C7D7FC /* PPDataCollector.m */,
+				446CDA5C251F3CD500C7D7FC /* PPDataCollector_Internal.h */,
+				446CDA5D251F3CD500C7D7FC /* Public */,
+				446CDA60251F3CD500C7D7FC /* Risk */,
+			);
+			path = PayPalDataCollector;
+			sourceTree = "<group>";
+		};
+		446CDA5D251F3CD500C7D7FC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA5E251F3CD500C7D7FC /* PayPalDataCollector.h */,
+				446CDA5F251F3CD500C7D7FC /* PPDataCollector.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		446CDA60251F3CD500C7D7FC /* Risk */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA61251F3CD500C7D7FC /* PPRMOCMagnesResult.h */,
+				446CDA62251F3CD500C7D7FC /* PPRMOCMagnesSDK.h */,
+				446CDA63251F3CD500C7D7FC /* libPPRiskMagnesOC.a */,
+			);
+			path = Risk;
+			sourceTree = "<group>";
+		};
+		446CDA6A251F3CD500C7D7FC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA6B251F3CD500C7D7FC /* BTPayPalAccountNonce.h */,
+				446CDA6C251F3CD500C7D7FC /* BTConfiguration+PayPal.h */,
+				446CDA6D251F3CD500C7D7FC /* BTPayPalCreditFinancing.h */,
+				446CDA6E251F3CD500C7D7FC /* BTPayPalDriver.h */,
+				446CDA6F251F3CD500C7D7FC /* BTPayPalRequest.h */,
+				446CDA70251F3CD500C7D7FC /* BraintreePayPal.h */,
+				446CDA71251F3CD500C7D7FC /* BTPayPalLineItem.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		446CDA73251F3CD500C7D7FC /* PayPalUtils */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA74251F3CD500C7D7FC /* PPOTSimpleKeychain.m */,
+				446CDA75251F3CD500C7D7FC /* PPOTJSONHelper.m */,
+				446CDA76251F3CD500C7D7FC /* PPOTTime.m */,
+				446CDA77251F3CD500C7D7FC /* PPOTDevice.m */,
+				446CDA78251F3CD500C7D7FC /* PPOTPinnedCertificates.m */,
+				446CDA79251F3CD500C7D7FC /* Public */,
+				446CDA85251F3CD500C7D7FC /* PPOTString.m */,
+				446CDA86251F3CD500C7D7FC /* PPOTEncryptionHelper.m */,
+				446CDA87251F3CD500C7D7FC /* PPOTURLSession.m */,
+				446CDA88251F3CD500C7D7FC /* PPOTMacros.m */,
+			);
+			path = PayPalUtils;
+			sourceTree = "<group>";
+		};
+		446CDA79251F3CD500C7D7FC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA7A251F3CD500C7D7FC /* PPOTPinnedCertificates.h */,
+				446CDA7B251F3CD500C7D7FC /* PPOTEncryptionHelper.h */,
+				446CDA7C251F3CD500C7D7FC /* PPOTVersion.h */,
+				446CDA7D251F3CD500C7D7FC /* PPOTString.h */,
+				446CDA7E251F3CD500C7D7FC /* PPOTURLSession.h */,
+				446CDA7F251F3CD500C7D7FC /* PPOTMacros.h */,
+				446CDA80251F3CD500C7D7FC /* PPOTSimpleKeychain.h */,
+				446CDA81251F3CD500C7D7FC /* PPOTJSONHelper.h */,
+				446CDA82251F3CD500C7D7FC /* PPOTDevice.h */,
+				446CDA83251F3CD500C7D7FC /* PayPalUtils.h */,
+				446CDA84251F3CD500C7D7FC /* PPOTTime.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		446CDA8B251F3CD500C7D7FC /* PayPalOneTouch */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA8C251F3CD500C7D7FC /* Configuration */,
+				446CDA91251F3CD500C7D7FC /* Models */,
+				446CDAB4251F3CD500C7D7FC /* Public */,
+				446CDABA251F3CD500C7D7FC /* Analytics */,
+			);
+			path = PayPalOneTouch;
+			sourceTree = "<group>";
+		};
+		446CDA8C251F3CD500C7D7FC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA8D251F3CD500C7D7FC /* PPOTConfiguration.h */,
+				446CDA8E251F3CD500C7D7FC /* PPDefaultConfigurationJSON.h */,
+				446CDA8F251F3CD500C7D7FC /* otc-config.ios.json */,
+				446CDA90251F3CD500C7D7FC /* PPOTConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		446CDA91251F3CD500C7D7FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				446CDA92251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.m */,
+				446CDA93251F3CD500C7D7FC /* PPOTBillingAgreementRequest.m */,
+				446CDA94251F3CD500C7D7FC /* PPOTCore_Internal.h */,
+				446CDA95251F3CD500C7D7FC /* PPOTError.h */,
+				446CDA96251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.m */,
+				446CDA97251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.m */,
+				446CDA98251F3CD500C7D7FC /* PPOTRequestFactory.m */,
+				446CDA99251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.m */,
+				446CDA9A251F3CD500C7D7FC /* PPOTCheckoutRequest.m */,
+				446CDA9B251F3CD500C7D7FC /* PPOTRequest_Internal.h */,
+				446CDA9C251F3CD500C7D7FC /* PPOTAppSwitchUtil.m */,
+				446CDA9D251F3CD500C7D7FC /* PPOTRequest.m */,
+				446CDA9E251F3CD500C7D7FC /* PPOTResult.m */,
+				446CDA9F251F3CD500C7D7FC /* PPOTCheckoutRequest_Internal.h */,
+				446CDAA0251F3CD500C7D7FC /* PPOTAppSwitchResponse.m */,
+				446CDAA1251F3CD500C7D7FC /* PPOTSwitchRequest.m */,
+				446CDAA2251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.h */,
+				446CDAA3251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.m */,
+				446CDAA4251F3CD500C7D7FC /* PPOTPersistentRequestData.m */,
+				446CDAA5251F3CD500C7D7FC /* PPOTCore.m */,
+				446CDAA6251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.h */,
+				446CDAA7251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.h */,
+				446CDAA8251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.h */,
+				446CDAA9251F3CD500C7D7FC /* PPOTError.m */,
+				446CDAAA251F3CD500C7D7FC /* PPOTAuthorizationRequest.m */,
+				446CDAAB251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.h */,
+				446CDAAC251F3CD500C7D7FC /* PPOTAppSwitchResponse.h */,
+				446CDAAD251F3CD500C7D7FC /* PPOTResult_Internal.h */,
+				446CDAAE251F3CD500C7D7FC /* PPOTAuthorizationRequest_Internal.h */,
+				446CDAAF251F3CD500C7D7FC /* PPOTAppSwitchUtil.h */,
+				446CDAB0251F3CD500C7D7FC /* PPOTPersistentRequestData.h */,
+				446CDAB1251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.h */,
+				446CDAB2251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.m */,
+				446CDAB3251F3CD500C7D7FC /* PPOTSwitchRequest.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		446CDAB4251F3CD500C7D7FC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				446CDAB5251F3CD500C7D7FC /* PPOTRequestFactory.h */,
+				446CDAB6251F3CD500C7D7FC /* PPOTResult.h */,
+				446CDAB7251F3CD500C7D7FC /* PPOTRequest.h */,
+				446CDAB8251F3CD500C7D7FC /* PayPalOneTouch.h */,
+				446CDAB9251F3CD500C7D7FC /* PPOTCore.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		446CDABA251F3CD500C7D7FC /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				446CDABB251F3CD500C7D7FC /* PPFPTITracker.m */,
+				446CDABC251F3CD500C7D7FC /* PPFPTIData.m */,
+				446CDABD251F3CD500C7D7FC /* PPOTAnalyticsDefines.h */,
+				446CDABE251F3CD500C7D7FC /* PPOTAnalyticsTracker.m */,
+				446CDABF251F3CD500C7D7FC /* PPFPTITracker.h */,
+				446CDAC0251F3CD500C7D7FC /* PPOTAnalyticsTracker.h */,
+				446CDAC1251F3CD500C7D7FC /* PPFPTIData.h */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		446CDA00251F3C8800C7D7FC /* TestBraintree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446CDA17251F3C8A00C7D7FC /* Build configuration list for PBXNativeTarget "TestBraintree" */;
+			buildPhases = (
+				446CD9FD251F3C8800C7D7FC /* Sources */,
+				446CD9FE251F3C8800C7D7FC /* Frameworks */,
+				446CD9FF251F3C8800C7D7FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBraintree;
+			productName = TestBraintree;
+			productReference = 446CDA01251F3C8800C7D7FC /* TestBraintree.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446CD9F9251F3C8800C7D7FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					446CDA00251F3C8800C7D7FC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 446CD9FC251F3C8800C7D7FC /* Build configuration list for PBXProject "TestBraintree" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446CD9F8251F3C8800C7D7FC;
+			productRefGroup = 446CDA02251F3C8800C7D7FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				446CDA00251F3C8800C7D7FC /* TestBraintree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		446CD9FF251F3C8800C7D7FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4436646E251F458A00BCBED8 /* SVProgressHUD.bundle in Resources */,
+				446CDA11251F3C8A00C7D7FC /* LaunchScreen.storyboard in Resources */,
+				446CDAF0251F3CD500C7D7FC /* otc-config.ios.json in Resources */,
+				446CDA0E251F3C8A00C7D7FC /* Assets.xcassets in Resources */,
+				446CDA0C251F3C8800C7D7FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446CD9FD251F3C8800C7D7FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446CDB06251F3CD500C7D7FC /* PPOTAnalyticsTracker.m in Sources */,
+				446CDAE6251F3CD500C7D7FC /* PPOTJSONHelper.m in Sources */,
+				446CDAD8251F3CD500C7D7FC /* BTAPIPinnedCertificates.m in Sources */,
+				446CDAE9251F3CD500C7D7FC /* PPOTPinnedCertificates.m in Sources */,
+				446CDAF5251F3CD500C7D7FC /* PPOTCheckoutAppSwitchRequest.m in Sources */,
+				446CDAED251F3CD500C7D7FC /* PPOTMacros.m in Sources */,
+				446CDACB251F3CD500C7D7FC /* BTAPIClient.m in Sources */,
+				446CDAD9251F3CD500C7D7FC /* BTPayPalIDToken.m in Sources */,
+				446CDADD251F3CD500C7D7FC /* BTConfiguration.m in Sources */,
+				446CDAE2251F3CD500C7D7FC /* BTPayPalCreditFinancingAmount.m in Sources */,
+				446CDADA251F3CD500C7D7FC /* BTGraphQLHTTP.m in Sources */,
+				446CDAFF251F3CD500C7D7FC /* PPOTPersistentRequestData.m in Sources */,
+				446CDB00251F3CD500C7D7FC /* PPOTCore.m in Sources */,
+				4436646B251F458A00BCBED8 /* SVProgressAnimatedView.m in Sources */,
+				446CDAF2251F3CD500C7D7FC /* PPOTOAuth2AppSwitchRequest.m in Sources */,
+				446CDAC4251F3CD500C7D7FC /* BTErrors.m in Sources */,
+				446CDA09251F3C8800C7D7FC /* ViewController.m in Sources */,
+				446CDAF9251F3CD500C7D7FC /* PPOTAppSwitchUtil.m in Sources */,
+				446CDAFE251F3CD500C7D7FC /* PPOTCheckoutSwitchRequest.m in Sources */,
+				446CDAC7251F3CD500C7D7FC /* BTJSON.m in Sources */,
+				446CDB02251F3CD500C7D7FC /* PPOTAuthorizationRequest.m in Sources */,
+				446CDACF251F3CD500C7D7FC /* BTPaymentMethodNonce.m in Sources */,
+				446CDAEE251F3CD500C7D7FC /* BTPayPalDriver.m in Sources */,
+				446CDB07251F3CD500C7D7FC /* BTConfiguration+PayPal.m in Sources */,
+				446CDAF8251F3CD500C7D7FC /* PPOTCheckoutRequest.m in Sources */,
+				446CDAF7251F3CD500C7D7FC /* PPOTOAuth2SwitchRequest.m in Sources */,
+				446CDAC6251F3CD500C7D7FC /* BTClientToken.m in Sources */,
+				446CDAC5251F3CD500C7D7FC /* BTAnalyticsMetadata.m in Sources */,
+				446CDAFB251F3CD500C7D7FC /* PPOTResult.m in Sources */,
+				446CDACD251F3CD500C7D7FC /* BTPaymentMethodNonceParser.m in Sources */,
+				446CDAF4251F3CD500C7D7FC /* PPOTOAuth2BrowserSwitchRequest.m in Sources */,
+				4436646D251F458A00BCBED8 /* SVIndefiniteAnimatedView.m in Sources */,
+				446CDAD1251F3CD500C7D7FC /* BTTokenizationService.m in Sources */,
+				446CDACC251F3CD500C7D7FC /* BTAnalyticsService.m in Sources */,
+				446CDAC9251F3CD500C7D7FC /* BTPreferredPaymentMethodsResult.m in Sources */,
+				446CDAF6251F3CD500C7D7FC /* PPOTRequestFactory.m in Sources */,
+				446CDAEA251F3CD500C7D7FC /* PPOTString.m in Sources */,
+				446CDAFA251F3CD500C7D7FC /* PPOTRequest.m in Sources */,
+				446CDADE251F3CD500C7D7FC /* PPDataCollector.m in Sources */,
+				446CDAF3251F3CD500C7D7FC /* PPOTBillingAgreementRequest.m in Sources */,
+				446CDAD6251F3CD500C7D7FC /* BTLogger.m in Sources */,
+				446CDAD7251F3CD500C7D7FC /* BTKeychain.m in Sources */,
+				4436646C251F458A00BCBED8 /* SVProgressHUD.m in Sources */,
+				446CDAE1251F3CD500C7D7FC /* BTPayPalRequest.m in Sources */,
+				446CDAE5251F3CD500C7D7FC /* PPOTSimpleKeychain.m in Sources */,
+				446CDACE251F3CD500C7D7FC /* BTAppSwitch.m in Sources */,
+				446CDADB251F3CD500C7D7FC /* BTClientMetadata.m in Sources */,
+				446CDAFD251F3CD500C7D7FC /* PPOTSwitchRequest.m in Sources */,
+				446CDB05251F3CD500C7D7FC /* PPFPTIData.m in Sources */,
+				446CDAD3251F3CD500C7D7FC /* BTHTTP.m in Sources */,
+				446CDAE8251F3CD500C7D7FC /* PPOTDevice.m in Sources */,
+				446CDAD2251F3CD500C7D7FC /* BTHTTPErrors.m in Sources */,
+				4436646A251F458A00BCBED8 /* SVRadialGradientLayer.m in Sources */,
+				446CDAE4251F3CD500C7D7FC /* BTPayPalRequestFactory.m in Sources */,
+				446CDB04251F3CD500C7D7FC /* PPFPTITracker.m in Sources */,
+				446CDADC251F3CD500C7D7FC /* BTConfiguration+GraphQL.m in Sources */,
+				446CDA14251F3C8A00C7D7FC /* main.m in Sources */,
+				446CDB01251F3CD500C7D7FC /* PPOTError.m in Sources */,
+				446CDAE7251F3CD500C7D7FC /* PPOTTime.m in Sources */,
+				446CDAEB251F3CD500C7D7FC /* PPOTEncryptionHelper.m in Sources */,
+				446CDACA251F3CD500C7D7FC /* BTURLUtils.m in Sources */,
+				446CDB03251F3CD500C7D7FC /* PPOTCheckoutBrowserSwitchRequest.m in Sources */,
+				446CDAD0251F3CD500C7D7FC /* BTPreferredPaymentMethods.m in Sources */,
+				446CDAE0251F3CD500C7D7FC /* BTPayPalLineItem.m in Sources */,
+				446CDA06251F3C8800C7D7FC /* AppDelegate.m in Sources */,
+				446CDAEC251F3CD500C7D7FC /* PPOTURLSession.m in Sources */,
+				446CDAEF251F3CD500C7D7FC /* BTPayPalCreditFinancing.m in Sources */,
+				446CDAE3251F3CD500C7D7FC /* BTPayPalAccountNonce.m in Sources */,
+				446CDAF1251F3CD500C7D7FC /* PPOTConfiguration.m in Sources */,
+				446CDAD4251F3CD500C7D7FC /* BTAPIHTTP.m in Sources */,
+				446CDAC8251F3CD500C7D7FC /* BTBinData.m in Sources */,
+				446CDAD5251F3CD500C7D7FC /* BTPostalAddress.m in Sources */,
+				446CDAFC251F3CD500C7D7FC /* PPOTAppSwitchResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		446CDA0A251F3C8800C7D7FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446CDA0B251F3C8800C7D7FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446CDA0F251F3C8A00C7D7FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446CDA10251F3C8A00C7D7FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446CDA15251F3C8A00C7D7FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		446CDA16251F3C8A00C7D7FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446CDA18251F3C8A00C7D7FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 595T2U49A2;
+				INFOPLIST_FILE = TestBraintree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestBraintree/BraintreeSDK/BraintreePayPal/PayPalDataCollector/Risk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopeway.hopewaycam5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		446CDA19251F3C8A00C7D7FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 595T2U49A2;
+				INFOPLIST_FILE = TestBraintree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestBraintree/BraintreeSDK/BraintreePayPal/PayPalDataCollector/Risk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopeway.hopewaycam5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446CD9FC251F3C8800C7D7FC /* Build configuration list for PBXProject "TestBraintree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446CDA15251F3C8A00C7D7FC /* Debug */,
+				446CDA16251F3C8A00C7D7FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446CDA17251F3C8A00C7D7FC /* Build configuration list for PBXNativeTarget "TestBraintree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446CDA18251F3C8A00C7D7FC /* Debug */,
+				446CDA19251F3C8A00C7D7FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446CD9F9251F3C8800C7D7FC /* Project object */;
+}
